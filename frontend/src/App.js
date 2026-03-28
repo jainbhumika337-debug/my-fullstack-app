@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 function App() {
   const [data, setData] = useState("");
   useEffect(() => {
-    fetch("http://localhost:5000/api/data")
+    fetch("https://my-fullstack-app-u2ye.onrender.com/api/data")
     .then(res => res.json())
     .then(data => setData(data.message));
   }, []);
